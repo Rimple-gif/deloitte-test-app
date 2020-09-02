@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="col-md-6  ml-5 pt-5">
-        <div class="card" style="height: 320px;"s>
+        <div class="card" style="height: 320px;" s>
             <div class="card-body">
                 <h5 class="card-title">{{product.name}}</h5>
                 <p class="card-text">
@@ -15,16 +15,19 @@
                     can comfortably sit on together
                     These are strong and wooden mades
                     These gives the best look in bedroom
-                    Furniture can be a product of design and is considered a form of decorative art. 
-                    In addition to furniture's functional role, it can serve a symbolic or religious purpose. 
+                    Furniture can be a product of design and is considered a form of decorative art.
+                    In addition to furniture's functional role, it can serve a symbolic or religious purpose.
                     Hope this is been liked and loved by everyone.
                 </p>
             </div>
             <div class="card-footer">
-                <b>{{product.price}}</b>
-                <span class="pull-right"><a href="#" class="btn btn-dark">Buy now</a></span>
+                <b>${{product.price}}</b>
+                <span class="pull-right">
+                    <a href="/product" class="btn btn-secondary mr-2">Back</a>
+                    <a [routerLink]="['/cart/',product.id]" class="btn btn-dark">Buy now</a>
+                </span>
             </div>
         </div>
-        
+
     </div>
 </div>
