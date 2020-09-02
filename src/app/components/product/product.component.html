@@ -1,18 +1,32 @@
 <app-header></app-header>
 <div class="row">
     <div class="col-md-3">
-        3 works
-        <!-- <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-          
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="/product">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+        <!-- <form action="/action_page.php"> -->
+        <div class="card ml-2" style="height:200px">
+            <input class="labels" list="browsers" placeholder="categories">
+            <datalist id="browsers">
+                <option value="Furniture">
+                <option value="Utensils">
+                <option value="Toys">
+            </datalist>
+            <div>
+                <input class="labels" list="color" placeholder="color">
+                <datalist id="color">
+                    <option value="Red">
+                    <option value="Green">
+                    <option value="Blue">
+                </datalist>
             </div>
-          </div> -->
+            <div>
+                <input class="labels" list="price" placeholder="Price">
+                <datalist id="price">
+                    <option value="less then 500">
+                    <option value="less then 1000">
+                    <option value="less then 1500">
+                </datalist>
+            </div>
+        </div>
+        <!-- </form> -->
     </div>
     <div class="col-md-9">
         <div class="productList">
